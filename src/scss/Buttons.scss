@@ -1,0 +1,20 @@
+@import "colors";
+
+.button-main {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid $button-main-border;
+  border-radius: 5px;
+  background-color: $button-main-bg-color;
+  color: $button-main-color;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+
+  &:hover {
+    background-color: $button-main-bg-color-hover;
+  }
+
+  &:active {
+    background-color: $button-main-bg-color-active;
+  }
+}
