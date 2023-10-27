@@ -1,14 +1,9 @@
-import { useState } from "react";
-import { ExpressionDisplay } from "./components/ExpressionDisplay";
-import { ButtonsPanel } from "./components/ButtonsPanel";
+import { AppContext } from "./components/AppContext";
 
 function App() {
-  const [expression, setExpression] = useState<string>("");
-
   return (
     <>
-      <ExpressionDisplay expression={expression} />
-      <ButtonsPanel expression={expression} expressionSetter={setExpression} />
+      <AppContext />
     </>
   );
 }
